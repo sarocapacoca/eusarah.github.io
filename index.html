@@ -1,78 +1,18 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quem Sou Eu</title>
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-image: url('templates/quem-sou-eu.jpg'); /* Caminho para a imagem de fundo */
-            background-size: cover; /* A imagem ocupa todo o fundo */
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-            background-position: center;
-        }
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-        }
-        .container {
-            width: 80%;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .sobre-mim img {
-            max-width: 150px;
-            border-radius: 50%;
-            margin-bottom: 20px;
-        }
-        .sobre-mim h2 {
-            font-size: 2em;
-            margin-bottom: 10px;
-        }
-        .sobre-mim p {
-            line-height: 1.6;
-            font-size: 1.2em;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #333;
-            color: #fff;
-        }
-    </style>
-</head>
+<html>
 <body>
-    <header>
-        <h1>Quem Sou Eu</h1>
-    </header>
 
-    <div class="container">
-        <div class="sobre-mim" style="text-align: center;">
-            <img src="templates/meu-perfil.jpg" alt="Foto de perfil">
-            <h2>Meu Nome</h2>
-            <p>Olá! Meu nome é Sarah e sou uma pessoa apaixonada por tecnologia, inovação e aprendizado contínuo. 
-               Atualmente, estou me dedicando ao desenvolvimento de sistemas e estudos na área de programação.</p>
-            <p>Nos meus momentos livres, gosto de explorar novas ferramentas, aprender sobre qualidade de software e compartilhar 
-               meu conhecimento com a comunidade.</p>
-            <p>Estou sempre buscando novos desafios para crescer pessoal e profissionalmente. Acredito no poder da colaboração 
-               e da criatividade para superar barreiras e construir soluções incríveis.</p>
-        </div>
-    </div>
+<h2>HTML Forms</h2>
 
-    <footer>
-        <p>&copy; 2024 Sarah. Todos os direitos reservados.</p>
-    </footer>
+<form action="teste.html">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="Sarah"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Eloisa"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
 </body>
 </html>
